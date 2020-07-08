@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using Melanchall.DryWetMidi.Core;
 using Script.Helper.Midi;
 using Script.playscreen.Observer;
@@ -34,18 +35,17 @@ namespace Script.playscreen{
             
             if (CorrectNotes(allNotesPressed, closestBeat.transform.GetChild(0).GetComponent<Text>().text)) {
                 Destroy(closestBeat);
+                _beats.Remove(closestBeat);
             }
         }
 
         private bool CorrectNotes(string allNotesPressed, string correctNotes) {
             var notesPressedArr = allNotesPressed.Split('+');
             var correctNotesArr = correctNotes.Split('+');
-            
-            print(notesPressedArr);
-            print(correctNotesArr);
 
             if (notesPressedArr.Length == correctNotesArr.Length) {
-                if (notesPressedArr.Equals(correctNotesArr)) {
+                if (!notesPressedArr.Except(correctNotesArr).Any()) {
+                    print("correct");
                     return true;
                 }
             }
@@ -72,7 +72,14 @@ namespace Script.playscreen{
         private GameObject GetClosestBeat() {
             float closestY = float.MaxValue;
             GameObject closestBeat = null;
+            
+            // List<GameObject> toBeRemoved = new List<GameObject>();
             foreach (GameObject beat in _beats) {
+                // // remove any beats that have been destroyed (either pressed or fell to the bottom).
+                // if (!beat) {
+                //     toBeRemoved.Add(beat);
+                //     continue;
+                // }
                 float beatCentreY = beat.transform.position.y - beat.GetComponent<RectTransform>().rect.height / 2;
                 float distance = Math.Abs(_missHeight - beatCentreY);
                 if (distance < closestY) {
@@ -80,6 +87,10 @@ namespace Script.playscreen{
                     closestY = distance;
                 }
             }
+            //
+            // foreach (GameObject beat in toBeRemoved) {
+            //     _beats.Remove(beat);
+            // }
 
             return closestBeat;
         }

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Threading.Tasks;
+using Script.playscreen.NotesStrategy;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -20,7 +21,9 @@ namespace Script.playscreen{
 
         private void AttachScripts() {
             GameObject panel = GameObject.Find("Panel");
-            panel.AddComponent<BeatSpawnHandler>();
+            BeatSpawnHandler beatSpawnHandler = panel.AddComponent<BeatSpawnHandler>();
+            beatSpawnHandler.SetNoteStrategy(new RandomSingleNotesStrategy());
+            
             panel.AddComponent<PlayerPress>();
         }
     }

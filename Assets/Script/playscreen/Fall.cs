@@ -16,6 +16,7 @@ namespace Script.playscreen{
 
             if (transform.position.y < -50) {
                 Destroy(gameObject);
+                PlayerPress.RemoveBeat(gameObject);
             }
         }
     }

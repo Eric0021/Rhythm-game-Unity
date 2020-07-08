@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using Melanchall.DryWetMidi.Interaction;
+using Script.playscreen.NotesStrategy;
 using Script.Songs;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,6 +16,8 @@ namespace Script.playscreen{
         private AudioSource music;
         private ISong song;
         private SortedList<Double, List<string>> notes;
+        private INoteStrategy _noteStrategy;
+        private bool ready;
 
         private float beatWidth;
         private float beatHeight;
@@ -28,16 +31,19 @@ namespace Script.playscreen{
         private double startingTime;
         private double offsetTime = 0;
 
-        void Start() {
+        // This script only starts when the note strategy has been set.
+        public void SetNoteStrategy(INoteStrategy strategy) {
+            _noteStrategy = strategy;
+            
             InitialiseObjects();
             SetBeatDim();
             SetMissHeight();
 
             startingTime = DateTimeOffset.Now.ToUnixTimeMilliseconds();
-
+            ready = true;
+            
             StartCoroutine(PlaySong());
         }
-
         private void SetMissHeight() {
             var button = GameObject.Find("Button");
             PlayerPress.SetMissHeight(button.transform.position.y - button.GetComponent<RectTransform>().rect.height/2);
@@ -104,8 +110,9 @@ namespace Script.playscreen{
         }
 
         IEnumerator PlaySong() {
+            // play the song after a delay, so that beats can spawn first.
+            
             var delay = secPerBeat * 4 * (1 / speedMultiplier);
-            // var delay = (secPerBeat * 4);
             yield return new WaitForSeconds(delay);
 
             music.Play();
@@ -121,8 +128,7 @@ namespace Script.playscreen{
         }
 
         private void InitialiseNotes() {
-            MidiParseHandler midiParseHandler = new MidiParseHandler();
-            notes = midiParseHandler.Parse("SecretGardenTest");
+            notes = _noteStrategy.GetNotes();
         }
 
         private void InitialiseSong() {
@@ -194,6 +200,11 @@ namespace Script.playscreen{
         }
 
         private void Update() {
+            // only start updating when note strategy has been set.
+            if (!ready) {
+                return;
+            }
+            
             // how many milliseconds has the song started.
             var songPosition = (music.time - song.GetOffSet()) * 1000;
 
