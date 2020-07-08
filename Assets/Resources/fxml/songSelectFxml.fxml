@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1080.0" prefWidth="1920.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.SongSelectController">
+   <children>
+      <Pane layoutY="-7.0" prefHeight="99.0" prefWidth="1924.0">
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <children>
+            <ImageView fitHeight="1136.0" fitWidth="2153.0" layoutY="-6.0" opacity="0.84" pickOnBounds="true">
+               <image>
+                  <Image url="@../Images/10846.jpg" />
+               </image>
+            </ImageView>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="104.0" layoutX="-1415.0" layoutY="41.0" stroke="BLACK" strokeType="INSIDE" width="1923.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="87.0" layoutX="-47.0" layoutY="50.0" stroke="BLACK" strokeType="INSIDE" width="547.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="76.0" layoutX="-25.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="520.0" />
+            <Text layoutX="212.0" layoutY="108.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Song Selection" wrappingWidth="324.9830722808838">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+               </font>
+            </Text>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="121.0" layoutX="64.0" layoutY="32.0" rotate="33.7" stroke="BLACK" strokeType="INSIDE" width="12.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff0033" height="121.0" layoutX="118.0" layoutY="33.0" rotate="33.7" stroke="BLACK" strokeType="INSIDE" width="12.0" />
+         </children>
+      </Pane>
+      <ScrollPane hbarPolicy="NEVER" layoutY="141.0" pannable="true" prefHeight="870.0" prefWidth="1920.0" style="-fx-background-color: transparent; -fx-background: transparent;" vbarPolicy="NEVER">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="768.0" prefWidth="2800.0" style="-fx-background-color: transparent;">
+               <children>
+                  <ImageView cache="true" cacheHint="SPEED" fitHeight="685.0" fitWidth="271.0" layoutX="353.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/second.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView cache="true" cacheHint="SPEED" fitHeight="685.0" fitWidth="271.0" layoutX="661.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/third.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView cache="true" cacheHint="SPEED" fitHeight="685.0" fitWidth="271.0" layoutX="967.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/fourth.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView cache="true" cacheHint="SPEED" fitHeight="685.0" fitWidth="271.0" layoutX="1277.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/fifth.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView cache="true" cacheHint="SPEED" fitHeight="697.0" fitWidth="271.0" layoutX="1585.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/5.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView cache="true" cacheHint="SPEED" fitHeight="685.0" fitWidth="271.0" layoutX="1883.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/8.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView cache="true" cacheHint="SPEED" fitHeight="705.0" fitWidth="271.0" layoutX="2192.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/6.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView cache="true" cacheHint="SPEED" fitHeight="703.0" fitWidth="272.0" layoutX="2500.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Images/7.png" />
+                     </image>
+                  </ImageView>
+                    <ImageView cache="true" cacheHint="SPEED" fitHeight="687.0" fitWidth="271.0" layoutX="42.0" layoutY="44.0">
+                            <Image url="@../Images/FirstCropped.png" />
+                    </ImageView>
+                  <Button cache="true" cacheHint="SPEED" layoutX="42.0" layoutY="44.0" mnemonicParsing="false" onMouseClicked="#selectSong" opacity="0.0" prefHeight="687.0" prefWidth="272.0" text="Cyx" AnchorPane.topAnchor="44.0">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                   </Button>
+                  <Button cache="true" cacheHint="SPEED" layoutX="353.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#selectSong" opacity="0.0" prefHeight="684.0" prefWidth="269.0" text="Wave" />
+                  <Button cache="true" cacheHint="SPEED" layoutX="661.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#selectSong" opacity="0.0" prefHeight="684.0" prefWidth="269.0" text="LightPollution" />
+                  <Button cache="true" cacheHint="SPEED" layoutX="967.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#selectSong" opacity="0.0" prefHeight="684.0" prefWidth="269.0" text="MaskOff" />
+                  <Button cache="true" cacheHint="SPEED" layoutX="1277.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#selectSong" opacity="0.0" prefHeight="684.0" prefWidth="269.0" text="Straits" />
+                  <Button cache="true" cacheHint="SPEED" layoutX="1585.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#selectSong" opacity="0.0" prefHeight="684.0" prefWidth="269.0" text="Alita" />
+                  <Button cache="true" cacheHint="SPEED" layoutX="1883.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#selectSong" opacity="0.0" prefHeight="684.0" prefWidth="269.0" text="Mission" />
+                  <Button cache="true" cacheHint="SPEED" layoutX="2193.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#selectSong" opacity="0.0" prefHeight="684.0" prefWidth="269.0" text="Singularity" />
+                  <Button cache="true" cacheHint="SPEED" layoutX="2501.0" layoutY="45.0" mnemonicParsing="false" onMouseClicked="#selectSong" opacity="0.0" prefHeight="684.0" prefWidth="269.0" text="Illusion" />
+                  <Label cache="true" cacheHint="SPEED" layoutX="136.0" layoutY="592.0" prefHeight="73.0" prefWidth="120.0" text="Cyx" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label cache="true" cacheHint="SPEED" layoutX="675.0" layoutY="592.0" prefHeight="83.0" prefWidth="292.0" text="Light Pollution" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label cache="true" cacheHint="SPEED" layoutX="1018.0" layoutY="591.0" prefHeight="73.0" prefWidth="168.0" text="Mask off" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label cache="true" cacheHint="SPEED" layoutX="1350.0" layoutY="591.0" prefHeight="73.0" prefWidth="168.0" text="Straits" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label cache="true" cacheHint="SPEED" layoutX="1671.0" layoutY="592.0" prefHeight="73.0" prefWidth="168.0" text="Alita" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label cache="true" cacheHint="SPEED" layoutX="1964.0" layoutY="592.0" prefHeight="73.0" prefWidth="168.0" text="Mission" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label cache="true" cacheHint="SPEED" layoutX="2223.0" layoutY="591.0" prefHeight="73.0" prefWidth="222.0" text="Singularity" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Label cache="true" cacheHint="SPEED" layoutX="2570.0" layoutY="591.0" prefHeight="73.0" prefWidth="222.0" text="Illusion" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+                     </font>
+                  </Label>
+                  <Text cache="true" cacheHint="SPEED" layoutX="428.0" layoutY="643.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wave" wrappingWidth="324.9830722808838">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="42.0" />
+                     </font>
+                  </Text>
+                  <Text cache="true" cacheHint="SPEED" fill="RED" layoutX="207.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black; -fx-stroke-width: 3px;" text="HOT!" wrappingWidth="119.3164176940918">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+                     </font>
+                  </Text>
+                  <Text cache="true" cacheHint="SPEED" fill="RED" layoutX="1139.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black; -fx-stroke-width: 3px;" text="HOT!" wrappingWidth="119.3164176940918">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+                     </font>
+                  </Text>
+                  <Text cache="true" cacheHint="SPEED" fill="RED" layoutX="1763.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black; -fx-stroke-width: 3px;" text="HOT!" wrappingWidth="119.3164176940918">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+                     </font>
+                  </Text>
+                  <Text cache="true" cacheHint="SPEED" fill="RED" layoutX="517.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-stroke: black; -fx-stroke-width: 3px;" text="NEW!" wrappingWidth="119.3164176940918">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="34.0" />
+                     </font>
+                  </Text>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SPEED" fill="WHITE" height="5.0" layoutX="78.0" layoutY="663.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Label cache="true" cacheHint="SPEED" layoutX="207.0" layoutY="648.0" prefHeight="73.0" prefWidth="120.0" text="By: Atori" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SPEED" fill="WHITE" height="5.0" layoutX="387.0" layoutY="661.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SPEED" fill="WHITE" height="5.0" layoutX="696.0" layoutY="659.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Label cache="true" cacheHint="SPEED" layoutX="821.0" layoutY="642.0" prefHeight="73.0" prefWidth="120.0" text="By: Alec" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SPEED" fill="WHITE" height="5.0" layoutX="991.0" layoutY="656.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Label cache="true" cacheHint="SPEED" layoutX="1116.0" layoutY="639.0" prefHeight="73.0" prefWidth="120.0" text="By: Sanyori" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SPEED" fill="WHITE" height="5.0" layoutX="1312.0" layoutY="656.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Label cache="true" cacheHint="SPEED" layoutX="1412.0" layoutY="639.0" prefHeight="73.0" prefWidth="120.0" text="By: eleven-7" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SPEED" fill="WHITE" height="5.0" layoutX="1619.0" layoutY="656.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Label cache="true" cacheHint="SPEED" layoutX="1703.0" layoutY="639.0" prefHeight="73.0" prefWidth="134.0" text="By: Unsigned" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SPEED" fill="WHITE" height="5.0" layoutX="1923.0" layoutY="656.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Label cache="true" cacheHint="SPEED" layoutX="1999.0" layoutY="639.0" prefHeight="73.0" prefWidth="153.0" text="By: Black Igloo" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SPEED" fill="WHITE" height="5.0" layoutX="2225.0" layoutY="656.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Label cache="true" cacheHint="SPEED" layoutX="2342.0" layoutY="640.0" prefHeight="73.0" prefWidth="153.0" text="By: Wavy" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" cacheHint="SPEED" fill="WHITE" height="5.0" layoutX="2540.0" layoutY="658.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+                  <Label cache="true" cacheHint="SPEED" layoutX="2595.0" layoutY="639.0" prefHeight="73.0" prefWidth="182.0" text="By: Chung sook yi" textFill="WHITE">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <Text cache="true" cacheHint="SPEED" layoutX="458.0" layoutY="686.0" strokeType="OUTSIDE" strokeWidth="0.0" text="By: John Miller" wrappingWidth="223.6640625">
+                     <font>
+                        <Font name="Berlin Sans FB Demi Bold" size="21.0" />
+                     </font>
+                  </Text>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </AnchorPane>
+        </content>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ScrollPane>
+   </children>
+</Pane>

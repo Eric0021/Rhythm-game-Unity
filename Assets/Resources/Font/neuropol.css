@@ -1,0 +1,15 @@
+@font-face {
+    src: url(neuropol_x_rg.ttf);
+}
+
+/*.text {*/
+/*    -fx-font-family: 'Neuropol X Rg';*/
+/*    -fx-font-style: bold;*/
+/*}*/
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-font-family: 'Neuropol X Rg';
+    -fx-text-fill: black;
+    -fx-opacity: 0.6;
+}
