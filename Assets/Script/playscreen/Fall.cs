@@ -9,14 +9,18 @@ namespace Script.playscreen{
         public float barHeight = -5000;
 
         private void Update() {
+            // Using anchoredPosition here, maybe bad practice, fix for performance later.
+            
             // only start making the beats fall if the variables are initialised.
             if (!secPerBeat.Equals(-5000) && !speedMultiplier.Equals(-5000) && !barHeight.Equals(-5000)) {
-                transform.position -= new Vector3(0f, barHeight / (4 * secPerBeat) * Time.deltaTime * speedMultiplier);
+                var fallSpeed = barHeight / (4 * secPerBeat) * Time.deltaTime * speedMultiplier;
+                GetComponent<RectTransform>().anchoredPosition -= new Vector2(0f, fallSpeed);
             }
 
-            if (transform.position.y < -50) {
+            var bottomY = -1080;
+            if (GetComponent<RectTransform>().anchoredPosition.y < bottomY-50) {
                 Destroy(gameObject);
-                PlayerPress.RemoveBeat(gameObject);
+                PlayerPressHandler.RemoveBeat(gameObject);
             }
         }
     }

@@ -11,16 +11,13 @@ namespace Script.playscreen{
         
         private void Start() {
             // add self to the list of active beats.
-            PlayerPress.AddToBeats(gameObject);
-        }
-
-        private void Update() {
+            PlayerPressHandler.AddToBeats(gameObject);
         }
 
         private void OnTriggerExit2D(Collider2D other) {
             // the note cannot be pressed once it gets too low.
             if (other.tag.Equals("Activator")) {
-                PlayerPress.RemoveBeat(gameObject);
+                PlayerPressHandler.RemoveBeat(gameObject);
             }
         }
     }

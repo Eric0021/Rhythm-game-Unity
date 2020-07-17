@@ -4,19 +4,19 @@ using Melanchall.DryWetMidi.Core;
 
 namespace Script.playscreen.Observer{
     public static class PianoPressObserver{
-        private static List<PlayerPress> subjects = new List<PlayerPress>();
+        private static List<PlayerPressHandler> subjects = new List<PlayerPressHandler>();
 
-        public static void AddSubject(PlayerPress subject) {
+        public static void AddSubject(PlayerPressHandler subject) {
             subjects.Add(subject);
         }
 
-        public static void removeSubject(PlayerPress subject) {
+        public static void removeSubject(PlayerPressHandler subject) {
             subjects.Remove(subject);
         }
 
         public static void UpdateSubjects(List<NoteOnEvent> e) {
-            List<PlayerPress> toBeRemoved = new List<PlayerPress>();
-            foreach (PlayerPress subject in subjects) {
+            List<PlayerPressHandler> toBeRemoved = new List<PlayerPressHandler>();
+            foreach (PlayerPressHandler subject in subjects) {
                 if (!subject) {
                     toBeRemoved.Add(subject);
                     continue;
@@ -24,7 +24,7 @@ namespace Script.playscreen.Observer{
                 subject.PianoKeyPress(e);
             }
 
-            foreach (PlayerPress subject in toBeRemoved) {
+            foreach (PlayerPressHandler subject in toBeRemoved) {
                 subjects.Remove(subject);
             }
         }

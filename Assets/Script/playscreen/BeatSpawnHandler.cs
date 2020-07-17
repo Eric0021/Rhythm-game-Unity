@@ -18,6 +18,7 @@ namespace Script.playscreen{
         private SortedList<Double, List<string>> notes;
         private INoteStrategy _noteStrategy;
         private bool ready;
+        private Difficulty _difficulty;
 
         private float beatWidth;
         private float beatHeight;
@@ -44,9 +45,14 @@ namespace Script.playscreen{
             
             StartCoroutine(PlaySong());
         }
+
+        public void SetDifficulty(Difficulty difficulty) {
+            _difficulty = difficulty;
+        }
+        
         private void SetMissHeight() {
             var button = GameObject.Find("Button");
-            PlayerPress.SetMissHeight(button.transform.position.y - button.GetComponent<RectTransform>().rect.height/2);
+            PlayerPressHandler.SetMissHeight(button.GetComponent<RectTransform>().anchoredPosition.y - button.GetComponent<RectTransform>().rect.height/2);
         }
         
         public void SpawnBeats() {
@@ -124,18 +130,19 @@ namespace Script.playscreen{
 
             column = GameObject.Find("column1");
             secPerBeat = 60f / song.GetBpm();
-            barHeight = 1080 - Math.Abs(GameObject.Find("Line").transform.position.y);
+
+            // using anchoredPosition here to get y relative to anchor, instead of camera (because in World Space render mode)
+            barHeight = Math.Abs(GameObject.Find("Line").GetComponent<RectTransform>().anchoredPosition.y);
         }
 
         private void InitialiseNotes() {
-            notes = _noteStrategy.GetNotes();
+            notes = _noteStrategy.GetNotes(_difficulty);
         }
 
         private void InitialiseSong() {
             var musicObj = GameObject.Find("Song");
             music = musicObj.GetComponent<AudioSource>();
-
-            song = new SecretGardenTest();
+            
             AudioClip audioClip = song.GetAudioClip();
 
             music.clip = audioClip;
@@ -205,7 +212,7 @@ namespace Script.playscreen{
                 return;
             }
             
-            // how many milliseconds has the song started.
+            // how many milliseconds since the song started.
             var songPosition = (music.time - song.GetOffSet()) * 1000;
 
             // spawning beats before the song starts.
@@ -217,6 +224,11 @@ namespace Script.playscreen{
             songPositionInBeats = ((songPosition + offsetTime) / secPerBeat) / 1000;
 
             SpawnBeats();
+        }
+
+        public ISong Song {
+            get => song;
+            set => song = value;
         }
     }
 }
