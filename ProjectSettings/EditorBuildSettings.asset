@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/swiping menu.unity
+    path: Assets/Scenes/song select.unity
     guid: 6acd5ccaebd405142ad7bc981a563682
   - enabled: 1
     path: Assets/Scenes/main screen.unity

@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: 6319144adc1221c4a8af2b05ba9891fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5808632514213874473
+    second: realBeatJump_0
+  - first:
+      213: -4477561587591026092
+    second: realBeatJump_1
+  - first:
+      213: 2793946683987744474
+    second: realBeatJump_2
+  - first:
+      213: -4170137237515556045
+    second: realBeatJump_3
+  - first:
+      213: -4047828762674818269
+    second: realBeatJump_4
+  - first:
+      213: -1545909322953105493
+    second: realBeatJump_5
+  - first:
+      213: -5973929903600028346
+    second: realBeatJump_6
+  - first:
+      213: -2912394586463522339
+    second: realBeatJump_7
+  - first:
+      213: -1181473256365533712
+    second: realBeatJump_8
+  - first:
+      213: 4253393370960154587
+    second: realBeatJump_9
+  - first:
+      213: -8413651860263426050
+    second: realBeatJump_10
+  - first:
+      213: -6333748212041581436
+    second: realBeatJump_11
+  - first:
+      213: -3563654290654025448
+    second: realBeatJump_12
+  - first:
+      213: -4336826671191234983
+    second: realBeatJump_13
+  - first:
+      213: 2925844207874071005
+    second: realBeatJump_14
+  - first:
+      213: -5100275746091001021
+    second: realBeatJump_15
+  - first:
+      213: 7150128563209196977
+    second: realBeatJump_16
+  - first:
+      213: 6560310922162691087
+    second: realBeatJump_17
+  - first:
+      213: 3720550549977680577
+    second: realBeatJump_18
+  - first:
+      213: -6491679328807660494
+    second: realBeatJump_19
+  - first:
+      213: -6795241034106726478
+    second: realBeatJump_0
+  - first:
+      213: -3066651581375512899
+    second: realBeatJump_1
+  - first:
+      213: -8745174845804844319
+    second: realBeatJump_2
+  - first:
+      213: -6031986249376036457
+    second: realBeatJump_3
+  - first:
+      213: -3785019923383363504
+    second: realBeatJump_4
+  - first:
+      213: 6066314334497378730
+    second: realBeatJump_5
+  - first:
+      213: -2807892171501604604
+    second: realBeatJump_6
+  - first:
+      213: 4661804320946686715
+    second: realBeatJump_7
+  - first:
+      213: 3606839289638322897
+    second: realBeatJump_8
+  - first:
+      213: -403072688777798565
+    second: realBeatJump_9
+  - first:
+      213: 2794178191823211163
+    second: realBeatJump_10
+  - first:
+      213: -31373071258470064
+    second: realBeatJump_11
+  - first:
+      213: 627458771173897125
+    second: realBeatJump_12
+  - first:
+      213: -7242070310759682136
+    second: realBeatJump_13
+  - first:
+      213: 6803035184250273442
+    second: realBeatJump_14
+  - first:
+      213: 3229974480068548245
+    second: realBeatJump_15
+  - first:
+      213: -6693915215325158227
+    second: realBeatJump_16
+  - first:
+      213: 4013947528809395220
+    second: realBeatJump_17
+  - first:
+      213: -6185696693885900570
+    second: realBeatJump_18
+  - first:
+      213: -7534537390904532330
+    second: realBeatJump_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: realBeatJump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b719ee384472b1a0800000000000000
+      internalID: -6795241034106726478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realBeatJump_1
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbef83272a01175d0800000000000000
+      internalID: -3066651581375512899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realBeatJump_2
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eaee19cfc5e2a680800000000000000
+      internalID: -8745174845804844319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realBeatJump_3
+      rect:
+        serializedVersion: 2
+        x: 1374
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79986eb07741a4ca0800000000000000
+      internalID: -6031986249376036457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realBeatJump_4
+      rect:
+        serializedVersion: 2
+        x: 1832
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05855fefe68e87bc0800000000000000
+      internalID: -3785019923383363504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realBeatJump_5
+      rect:
+        serializedVersion: 2
+        x: 2290
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baf5a6e49a3db8ae0800000000000000
+      internalID: -1545909322953105493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realBeatJump_6
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64536d66766581da0800000000000000
+      internalID: -5973929903600028346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realBeatJump_7
+      rect:
+        serializedVersion: 2
+        x: 3206
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1321cdd881597d0800000000000000
+      internalID: -2912394586463522339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realBeatJump_8
+      rect:
+        serializedVersion: 2
+        x: 3664
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f555b245509a9fe0800000000000000
+      internalID: -1181473256365533712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realBeatJump_9
+      rect:
+        serializedVersion: 2
+        x: 4122
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdfc4164cb6170b30800000000000000
+      internalID: 4253393370960154587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: realBeatJump_10
+      rect:
+        serializedVersion: 2
+        x: 4580
+        y: 0
+        width: 458
+        height: 1080
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef7a135e534bc3b80800000000000000
+      internalID: -8413651860263426050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

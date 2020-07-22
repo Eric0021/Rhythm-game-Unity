@@ -51,7 +51,7 @@ namespace Script.playscreen{
         }
         
         private void SetMissHeight() {
-            var button = GameObject.Find("Button");
+            var button = DataStorage.Button;
             PlayerPressHandler.SetMissHeight(button.GetComponent<RectTransform>().anchoredPosition.y - button.GetComponent<RectTransform>().rect.height/2);
         }
         
@@ -103,13 +103,13 @@ namespace Script.playscreen{
         private GameObject GetColumn(int colNum) {
             switch (colNum) {
                 case 1:
-                    return GameObject.Find("column1");
+                    return DataStorage.Column1;
                 case 2:
-                    return GameObject.Find("column2");
+                    return DataStorage.Column2;
                 case 3:
-                    return GameObject.Find("column3");
+                    return DataStorage.Column3;
                 case 4:
-                    return GameObject.Find("column4");
+                    return DataStorage.Column4;
                 default:
                     return null;
             }
@@ -128,11 +128,11 @@ namespace Script.playscreen{
             InitialiseSong();
             InitialiseNotes();
 
-            column = GameObject.Find("column1");
+            column = DataStorage.Column1;
             secPerBeat = 60f / song.GetBpm();
 
             // using anchoredPosition here to get y relative to anchor, instead of camera (because in World Space render mode)
-            barHeight = Math.Abs(GameObject.Find("Line").GetComponent<RectTransform>().anchoredPosition.y);
+            barHeight = Math.Abs(DataStorage.Line.GetComponent<RectTransform>().anchoredPosition.y);
         }
 
         private void InitialiseNotes() {
@@ -140,7 +140,7 @@ namespace Script.playscreen{
         }
 
         private void InitialiseSong() {
-            var musicObj = GameObject.Find("Song");
+            var musicObj = DataStorage.Song;
             music = musicObj.GetComponent<AudioSource>();
             
             AudioClip audioClip = song.GetAudioClip();
@@ -191,6 +191,7 @@ namespace Script.playscreen{
             // set the column as beat's parent.
             trans.transform.SetParent(column.transform);
             trans.localScale = Vector2.one;
+            beat.transform.position = new Vector3(trans.anchoredPosition.x, trans.anchoredPosition.y, -5);
 
             Vector2 dim = new Vector2(beatWidth, beatHeight);
             trans.sizeDelta = dim;
